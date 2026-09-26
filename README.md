@@ -35,7 +35,7 @@ PHY-LIB/
 ├── .gitignore
 ├── LICENSE
 └── PHY_LIB.csproj
-
+```
 ## 🚀 Key Features
 
 * **Discord Bot Helpers:** Simplified bot setup and command registration using DSharpPlus.
