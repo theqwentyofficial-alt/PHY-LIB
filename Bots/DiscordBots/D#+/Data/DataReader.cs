@@ -1,6 +1,8 @@
-﻿namespace PHY_LIB.Bots.DiscordBots.DSharpPlus
+﻿using System.Data;
+
+namespace PHY_LIB.Bots.DiscordBots.DSharpPlus.Data
 {
-    public class DataReader
+    public class DataReader : IDataReader
     {
         public async Task<string> ReadFile(string path)
         {
