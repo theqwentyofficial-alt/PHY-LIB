@@ -1,30 +1,19 @@
 # ⚡ PHY-LIB
 
-<div align="center">
+[![License: MPL-2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![C#](https://img.shields.io/badge/C%23-.NET%207%2B-blue.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+[![Status](https://img.shields.io/badge/Status-Active_Development-orange.svg)]()
+[![AI Blocked](https://img.shields.io/badge/AI-Blocked-red.svg)]()
 
-[![License: MPL-2.0](https://img.shields.io/badge/License-MPL--2.0-brightgreen.svg)](https://github.com/few2alt/PHY-LIB/blob/main/LICENSE)
-[![C#](https://img.shields.io/badge/C%23-.NET%207%2B-blue.svg)](https://docs.microsoft.com/en-us/dotnet/)
-[![Status](https://img.shields.io/badge/Status-Active%20Development-orange.svg)]()
-[![No AI](https://img.shields.io/badge/AI-Blocked-red.svg)](#--strict-no-ai-policy)
-
-**Core abstractions and utilities for mathematical, physical, and auxiliary systems.**
-
-</div>
+*A lightweight C# library providing core abstractions, helpers, and utilities to streamline routine development tasks.*
 
 ---
 
 ## 🎯 About The Project
 
-**PHY-LIB** is a lightweight, high-performance library built from scratch to provide robust mathematical and physical abstractions for C# projects (such as custom rendering engines, physics simulations, and graphics utilities). 
+**PHY-LIB** is a modular collection of developer utilities, wrappers, and core abstractions designed to eliminate boilerplate code in C# applications. 
 
-The library aims to offer precise, type-safe, and dependency-free structures for cross-domain calculations.
-
----
-
-## 🛡️ Strict "No AI" Policy
-
-> **ATTENTION!** 
-> This repository maintains a strict **100% human-crafted code** policy. No neural networks, AI code generators, or LLM-assisted code synthesis are used. Every single line of code, optimization, and architecture decision is written and verified by hand to ensure absolute quality, performance, and reliability.
+Whether you are setting up Discord bots, working with asynchronous file IO, or utilizing lightweight mathematical types, this library provides simple, clean, and reusable interfaces to accelerate your workflow.
 
 ---
 
@@ -33,11 +22,36 @@ The library aims to offer precise, type-safe, and dependency-free structures for
 ```text
 PHY-LIB/
 │
-├── Maths/          # Core mathematical structures (Vectors, Matrices, etc.)
-│   ├── vec3.cs     # Generic 3D Vector implementation
-│   └── mat4.cs     # 4x4 Matrix implementation
+├── Bots/                           # Bot frameworks and platform integrations
+│   └── DiscordBots/
+│       └── D#+/                    # DSharpPlus wrappers & client initialization helpers
+│           ├── Client/             # Client setup and command registration
+│           └── Data/               # Configuration data contracts & readers
+│
+├── Maths/                          # Basic math structures and helper types
+│   ├── vec3.cs                     # Generic 3D Vector implementation
+│   └── mat4.cs                     # 4x4 Matrix implementation
 │
 ├── .gitignore
 ├── LICENSE
-├── PHY-LIB.sln
 └── PHY_LIB.csproj
+
+## 🚀 Key Features
+
+* **Discord Bot Helpers:** Simplified bot setup and command registration using DSharpPlus.
+* **Data Reading & Serialization:** Asynchronous file reading abstractions (`IDataReader`).
+* **Math Primitives:** Lightweight generic vector and matrix structures for routine calculations.
+* **Zero Overhead:** Minimal external dependencies for clean integration into any .NET project.
+
+---
+
+## 🛡️ Strict "No AI" Policy
+
+> **ATTENTION!**  
+> This repository maintains a strict **100% human-crafted code** policy. No neural networks, AI code generators, or LLM-assisted code synthesis are used. Every single line of code, optimization, and architecture decision is written and verified by hand.
+
+---
+
+## 📄 License
+
+Distributed under the **MPL-2.0 License**. See `LICENSE` for more information.
