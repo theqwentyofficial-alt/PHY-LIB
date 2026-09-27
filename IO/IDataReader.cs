@@ -1,4 +1,4 @@
-﻿namespace PHY_LIB.Bots.DiscordBots.DSharpPlus.Data
+﻿namespace PHY_LIB.IO
 {
     public interface IDataReader
     {

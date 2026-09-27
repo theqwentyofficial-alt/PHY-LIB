@@ -1,15 +1,18 @@
 ﻿using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using PHY_LIB.Bots.DiscordBots.DSharpPlus.Data;
+using PHY_LIB.IO;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 namespace PHY_LIB.Bots.DiscordBots.DSharpPlus.Client
 {
     public partial class Client
     {
-        public static CommandsNextExtension Commands { get; set; }
-        public static async Task<IBData> SetUp<IBData, IDReader>(string fullTokenPath, DiscordIntents intents) where IBData : IBotData where IDReader : IDataReader
+        public CommandsNextExtension Commands { get; set; }
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public async Task<IBData> SetUp<IBData>(string fullTokenPath, DiscordIntents intents) where IBData : IBotData 
         {
-            IDataReader reader = new DataReader();
+            DataReader reader = new DataReader();
             IBData botData = JsonSerializer.Deserialize<IBData>(await reader.ReadFile(fullTokenPath));
             DiscordConfiguration config = new()
             {

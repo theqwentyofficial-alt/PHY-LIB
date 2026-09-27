@@ -1,9 +1,11 @@
 ﻿using System.Data;
+using System.Runtime.CompilerServices;
 
-namespace PHY_LIB.Bots.DiscordBots.DSharpPlus.Data
+namespace PHY_LIB.IO
 {
     public class DataReader : IDataReader
     {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public async Task<string> ReadFile(string path)
         {
             using (StreamReader reader = new(path))
