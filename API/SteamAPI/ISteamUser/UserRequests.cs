@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-using System.Text.Json;
-
+﻿using System.Text.Json;
 namespace PHY_LIB.API.SteamAPI.ISteamUser
 {
     public class UserRequests

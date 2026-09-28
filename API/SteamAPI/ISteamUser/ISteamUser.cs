@@ -1,5 +1,4 @@
-﻿
-namespace PHY_LIB.API.SteamAPI.ISteamUser
+﻿namespace PHY_LIB.API.SteamAPI.ISteamUser
 {
     public interface ISteamUser
     {

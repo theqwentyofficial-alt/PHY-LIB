@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PHY_LIB.API.SteamAPI.ISteamUser
+﻿namespace PHY_LIB.API.SteamAPI.ISteamUser
 {
     public interface IFriendsList
     {

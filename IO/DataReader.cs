@@ -1,7 +1,4 @@
-﻿using System.Data;
-using System.Runtime.CompilerServices;
-
-namespace PHY_LIB.IO
+﻿namespace PHY_LIB.IO
 {
     public class DataReader : IDataReader
     {
