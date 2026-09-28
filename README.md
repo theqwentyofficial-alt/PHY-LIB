@@ -22,11 +22,16 @@ Whether you are setting up Discord bots, working with asynchronous file IO, or u
 ```text
 PHY-LIB/
 │
+├── API/                            # External API integrations and wrappers
+│   └── SteamAPI/                   # Steam Web API abstractions
+│
 ├── Bots/                           # Bot frameworks and platform integrations
 │   └── DiscordBots/
 │       └── D#+/                    # DSharpPlus wrappers & client initialization helpers
 │           ├── Client/             # Client setup and command registration
 │           └── Data/               # Configuration data contracts & readers
+│
+├── IO/                             # File IO abstractions and asynchronous readers
 │
 ├── Maths/                          # Basic math structures and helper types
 │   ├── vec3.cs                     # Generic 3D Vector implementation
