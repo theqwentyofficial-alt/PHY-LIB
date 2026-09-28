@@ -1,8 +1,8 @@
 ﻿using DSharpPlus.CommandsNext;
 using DSharpPlus.Entities;
-namespace PHY_LIB.Bots.DiscordBots.DSharpPlus.Client
+namespace PHY_LIB.Bots.DiscordBots.DPlus.Client
 {
-    public partial class Client
+    public partial class ClientMessaging
     {
         public static DiscordEmbedBuilder CreateEmbedMessage(CommandContext ctx = null, string webSite_Url = null, string image_Url = null, string thumbnail_Url = null, string title = null, string description = null)
         {

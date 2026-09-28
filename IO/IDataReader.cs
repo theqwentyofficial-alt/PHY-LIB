@@ -2,6 +2,6 @@
 {
     public interface IDataReader
     {
-        Task<string> ReadFile(string path);
+   public Task<string> ReadFileAsync(string path);
     }
 }

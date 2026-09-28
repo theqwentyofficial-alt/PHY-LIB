@@ -18,7 +18,7 @@
        public string name { get; set; }
        public int playtime_forever { get; set; }
        public int playtime_2weeks { get; set; }
-       public int lastTimePlayed { get; set; }
+       int lastTimePlayed { get; set; }
        public DateTime LastTimePlayed { get; set; }
         public int rtime_last_played
         {
@@ -66,6 +66,5 @@
                 LastTimePlayed = date;
             }
         }
-
     }
 }

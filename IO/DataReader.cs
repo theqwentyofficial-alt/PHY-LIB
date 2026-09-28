@@ -5,8 +5,7 @@ namespace PHY_LIB.IO
 {
     public class DataReader : IDataReader
     {
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public async Task<string> ReadFile(string path)
+        public async Task<string> ReadFileAsync(string path)
         {
             using (StreamReader reader = new(path))
             {
