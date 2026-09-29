@@ -2,7 +2,7 @@
 {
     public interface IFriendsList
     {
-        public Friend[] friends { get; set; }
+        public List<Friend> friends { get; set; } 
     }
     public interface IFriend
     {
@@ -12,7 +12,7 @@
     }
     public class FriendsList : IFriendsList
     {
-      public Friend[] friends { get; set; }
+      public List<Friend> friends { get; set; } = new List<Friend>();
     }
     public class Friend : IFriend
     {

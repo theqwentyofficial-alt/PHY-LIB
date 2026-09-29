@@ -29,9 +29,9 @@
     }
     public class SteamUser : ISteamUser
     {
-        public virtual UserData response { get; set; }
-        public virtual UserBanData[] players { get; set; }
-        public virtual FriendsList friendslist { get; set; }
+        public virtual UserData response { get; set; } = new UserData();
+        public virtual List<UserBanData> players { get; set; } = new List<UserBanData>();
+        public virtual FriendsList friendslist { get; set; } = new FriendsList();
     }
     public class UserBanData
     {
@@ -45,7 +45,7 @@
     }
     public class UserData : IUserData
     {
-       public virtual List<Data> players { get; set; }
+       public virtual List<Data> players { get; set; } = new List<Data>();
     }
     public class Data : IData
     {

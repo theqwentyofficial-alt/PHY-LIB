@@ -1,6 +1,6 @@
 ﻿using DSharpPlus.Entities;
 using DSharpPlus.Interactivity;
-namespace PHY_LIB.Bots.DiscordBots.DPlus.Client.Messages
+namespace PHY_LIB.Bots.DPlus.Client.Messaging
 {
     public static partial class ClientMessaging
     {
@@ -8,6 +8,5 @@ namespace PHY_LIB.Bots.DiscordBots.DPlus.Client.Messages
         {
             pages.Add(new Page(content,embedPage));
         }
-
     }
 }

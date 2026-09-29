@@ -1,7 +1,7 @@
 ﻿using DSharpPlus.CommandsNext;
 using DSharpPlus.Entities;
 using DSharpPlus.Interactivity.Extensions;
-namespace PHY_LIB.Bots.DiscordBots.DPlus.Client.Messages
+namespace PHY_LIB.Bots.DPlus.Client.Messaging
 {
     public partial class ClientMessaging
     {
